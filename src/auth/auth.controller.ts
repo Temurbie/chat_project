@@ -6,6 +6,9 @@ export class AuthController {
     @Post('register')
     register(@Body() body: register_dto){
         console.log("register", body)
-        return {massage : "malumot olindi" , data : body}
+        return {
+                "name": "Ali",
+                "password": "123456"
+                }
     }
 }
